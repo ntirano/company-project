@@ -1,0 +1,163 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+
+    border: 0px;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(36, 36, 36);
+    background-color: yellow;
+
+}
+.wrap {
+    width: 100%;
+    min-width: 1200px;
+
+}
+.header {
+    background-color: orange;
+
+}
+.headerin {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}   
+.logo :hover {
+    width: 200px;
+}
+
+.gnb ul{
+    display: flex;   
+    background-color: aqua;
+}
+.gnb li a {
+    margin-right: 50px;
+    font-size: 18px;
+    color: black;
+}
+.gnb li a:hover {
+    color: purple;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.member ul {
+    display: flex;
+    background-color: lightgreen;
+
+}
+.member li { 
+    margin-left: 40px;
+}
+.member li a {
+    color: black;
+}
+.member li a:hover {
+    color: purple;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.container{
+
+}
+
+.main1 {
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main1img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -800px;
+}
+
+
+/* 
+    *main1img의 이미지 너비값이 안전사이즈보다 넓음
+    *그래서 강제로 가운데 배치하기 위해 position : absolute 를 사용함
+    *.main1의 하나뿐인 자식인 .main1img가 absolutue 처리가되면
+    세로높이값이 0으로 처리 되므로
+    .main1 에서 사용할 만큼의 높이값을 강제로 입력함 
+    *브라우저의 너비보다 더 큰 이미지 대문에 아래쪽에 스크롤이 생기므로 
+    이를 정리하기 위해서 .main1에 overflow: hidden; 을 설정함.
+    *안전사이즈보다 브라우저의 크기가 작아질 경우
+    .main1img의 이미지가 잘려서 표시가 되므로
+    전체 영역의 최소 너비값 (min-width)를 안전사이즈의 너비로 고정함.
+*/
+.main2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 194px;
+    padding-top: 50px;
+  
+}
+
+.main2img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.main3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-top: 50px;
+    position: relative;
+}
+.text3{
+    display: flex;
+    justify-content: space-between;
+}
+.text3 p:first-child{
+    font-size: 24px;
+    color: rgb(24, 24, 24);
+}
+.text3 p:last-child{
+    font-size: 16px;
+    color: rgb(83, 83, 83);
+}
+.main3img ul{
+   display: flex;
+    justify-content: space-between;
+}
+
+.main3img a img{
+    object-fit: contain;
+    width: 291px;        
+}
+
+.main3img ul li p{
+    text-align: center;   
+ }
+ 
+.price {
+    
+}
+
