@@ -1,0 +1,352 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+
+    border: 0px;
+}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(36, 36, 36);
+    /* background-color: yellow; */
+
+}
+.wrap {
+    width: 100%;
+    min-width: 1200px;
+
+}
+.header {
+    background-color: orange;
+
+}
+.headerin {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}   
+.logo a {
+    background-color: lightsalmon;
+    width: 138px;
+    height: 20px;
+    display: block;
+    background-image: url(/3_사이트연습/01_아리따움/img/logo.gif);
+    text-indent: -999999px;
+}
+
+
+
+.gnb ul{
+    display: flex;   
+    background-color: aqua;
+}
+.gnb li a {
+    margin-right: 50px;
+    font-size: 18px;
+    color: black;
+}
+.gnb li a:hover {
+    color: purple;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+
+.member .btnsc a{
+    display: block;
+    width: 22px;
+    height: 20px;
+    background-image: url(/3_사이트연습/01_아리따움/img/icon_search.png) ;
+    text-indent: -9999999px;
+    background: no-repeat;
+}
+
+.member ul {
+    display: flex;
+    background-color: lightgreen;
+
+}
+.member li { 
+    margin-left: 40px;
+}
+.member li a {
+    color: black;
+}
+.member li a:hover {
+    color: purple;
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+
+.main1 {
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main1img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -800px;
+}
+
+
+/* 
+    *main1img의 이미지 너비값이 안전사이즈보다 넓음
+    *그래서 강제로 가운데 배치하기 위해 position : absolute 를 사용함
+    *.main1의 하나뿐인 자식인 .main1img가 absolutue 처리가되면
+    세로높이값이 0으로 처리 되므로
+    .main1 에서 사용할 만큼의 높이값을 강제로 입력함 
+    *브라우저의 너비보다 더 큰 이미지 대문에 아래쪽에 스크롤이 생기므로 
+    이를 정리하기 위해서 .main1에 overflow: hidden; 을 설정함.
+    *안전사이즈보다 브라우저의 크기가 작아질 경우
+    .main1img의 이미지가 잘려서 표시가 되므로
+    전체 영역의 최소 너비값 (min-width)를 안전사이즈의 너비로 고정함.
+*/
+.main2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    height: 194px;
+    padding-top: 50px;
+  
+}
+
+.main2img {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.main3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.main3 h2 span{
+    font-weight: normal;
+}
+
+.main3 ul { 
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main3 li {
+    background-color: skyblue;
+    width: 285px;
+    text-align: center;
+}
+
+.main3 li .itemimg{
+    margin-bottom: 10px;
+    border: 1px solid;
+
+}
+
+.main3 li .itemimg img{
+    width: 100%;
+}
+
+.main3 li .itemBrand{
+    color: black;
+}
+
+
+
+.main3 li .itemName{
+    color: black;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.main3 li .itemName2{
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.main3 li .itemprice{
+    color: black;
+    margin-bottom: 5px;
+    font-weight: 700;
+
+}
+
+.main3 li .itemprice span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    
+}
+
+
+
+
+
+
+.main3 .more {
+    background-color: aqua;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+
+}
+
+.main3 .more a {
+    background-color: pink;
+    padding-right: 16px;
+
+    background-image: url(/3_사이트연습/01_아리따움/img/icon_plus.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main3 .more a span{
+
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px ;
+    margin-left: 3px;
+}
+
+.main4{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.main4 .itemimg {
+	position: relative;
+
+}
+
+.main4 .text {
+    font-size: larger;
+	padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+    margin: 10px;
+    top: 45%;
+}
+
+.main4 .text2 {
+    font-size: larger;
+	padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+    margin: 10px;
+    top: 45%;
+    left: 35%;
+}
+
+.main4 .text3 {
+    font-size: larger;
+	padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+    margin: 10px;
+    top: 45%;
+    left: 70%;
+}
+
+
+.footer{
+    border-top: 3px solid  black;
+    width: 1200px;
+        margin-left: auto;
+    margin-right: auto;
+}
+
+.footerin{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.fmenu{
+    
+    width: 60%;
+}
+
+.fmenu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.finfo {
+    margin-top: 15px;
+}
+
+.point a{
+    color: blueviolet;
+}
+
+.bar {
+    
+    color: gray;
+    font-size: 9px;
+}
+
+
+.kg{
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+
+    padding-top: 100px;
+}
+
+
+
+
+.kg2{
+    margin-bottom: 18px;
+    padding-top: 50px;
+    background-position: top left;
+    background: no-repeat;
+    background-image: url(/3_사이트연습/01_아리따움/img/inicis.png);
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.kg3 a{
+    background-color: blue;
+    color: black;
+    padding-right: 10px;
+    background: no-repeat;
+    background-position: right center;
+    background-image: url(/3_사이트연습/01_아리따움/img/arrow01.png);
+}
